@@ -17,7 +17,7 @@ And the most important thing is the code change is really small:
 Standard sofmax:
 
 ```python
- # initialize m->0, l->exp(0)=1
+ # initialize m, l
  m_i = tl.zeros([BLOCK_M], dtype=tl.float32) - tl.inf
  l_i = tl.full([BLOCK_M], 0.0, dtype=tl.float32)
 ```
